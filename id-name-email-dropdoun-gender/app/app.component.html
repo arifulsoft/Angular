@@ -1,0 +1,67 @@
+<div class="container">
+  <label for="name" class="form-label">id : </label>
+  <input type="number" style=" width: 400px;" name="x" class="form-control" id="name" [(ngModel)]="x"><br><p></p>
+
+  <label for="name" class="form-label">Name : </label>
+  <input type="text" style=" width: 400px;" name="y" class="form-control" id="name" [(ngModel)]="y"><br><p></p>
+
+  <label for="name" class="form-label">Email : </label>
+  <input type="text" style=" width: 400px;" name="z" class="form-control" id="name" [(ngModel)]="z"><br><p></p>
+
+  <div>
+    <label for="name" class="form-label">Select : </label>
+    <select name="" id="" style="width: 400px;" [(ngModel)]="round">
+      <option value="55" >55</option>
+      <option value="56" >56</option>
+      <option value="57">57</option>
+      <option value="58" >58</option>
+    </select>
+  </div>
+
+  <div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Male" checked [(ngModel)]="gender">
+      <label class="form-check-label" for="exampleRadios1">
+       Male
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Female" [(ngModel)]="gender">
+      <label class="form-check-label" for="exampleRadios2">
+        Female
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Others" [(ngModel)]="gender">
+      <label class="form-check-label" for="exampleRadios2">
+        Others
+      </label>
+    </div>
+  </div>
+
+  
+ 
+ 
+
+</div><p></p>
+<div class="container" style= "margin-left: 600px;">
+  <button style="background-color: blue; color: white; " type="submit"(click)="m2()">Submit</button>
+</div><br>
+<table class="container">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>email</th>
+    <th>Round</th>
+    <th>Gender</th>
+  </tr>
+  <tr *ngFor="let i of productsArray">
+    <td>{{i.id}}</td>
+    <td>{{i.Name}}</td>
+    <td>{{i.email}}</td>
+    <td>{{i.round}}</td>
+    <td>{{i.gender}}</td>
+  </tr>
+</table>
+
+<router-outlet></router-outlet>
