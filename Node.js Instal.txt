@@ -1,0 +1,10 @@
+
+-------------------------------------------------------------Note.Ja Instal----------------------------------------------
+
+1-Stap:Node.ja===Online dounlode.
+2-Stap:npm install -g @angular/cli@14.2.13
+3-Stap:ng new Ariful(Enter)
+4-Stap:Y-enter-enter
+5-Stap:cd Ariful(Ariful Project maind)
+6-Stap:ng serve(project run)
+7-Stap:http://localhost:4200/
