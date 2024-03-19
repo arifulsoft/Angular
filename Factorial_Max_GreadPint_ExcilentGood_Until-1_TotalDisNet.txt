@@ -1,0 +1,144 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'prime';
+  x: number = 0;
+  y: number = 0;
+  z: number = 0;
+  h:number=0;
+  //  count=0;
+  //  msg="";
+  //   p=1;
+
+  // max = "";
+  // grd = "";
+  // total=0;
+  // dis=0;
+  // net=0;
+  // dtn1="";
+  // dtn2="";
+  // dtn3="";
+  sum=0;
+  ut="";
+
+  m1() {
+    //  this. count=0;
+    // this.mgs="";
+    // for(var i=0; i<=this.x; i++){
+    //   if(this.x%i==0){
+    //     this.count++;
+    //   }
+    // }
+    // if(this.count==2){
+    //   this.mgs="This is a prime number";
+    // }else{
+    //   this.mgs="This is a not prime numner";
+    // }
+
+    // factorial--------------------------------
+    //   this.p=1;
+    // if (this.x <= 1) {
+    //   this.p = 1;
+
+    // } else {
+    //   for (var i = 2; i <= this.x; i++) {
+    //     this.p = this.p * i;
+
+    //   }
+
+
+
+    // }
+    // factorial end-------------------------
+
+    // mex number ---------------------
+    // if (this.x > this.y && this.x > this.z) {
+    //   this.max = ("Meximam number is:" + this.x);
+    // } else if (this.y > this.x && this.y > this.z) {
+    //   this.max = ("Meximam number is:" + this.y);
+
+    // } else {
+    //   this.max = ("Meximam number is:" + this.z);
+    // }
+    // max number end--------------------
+
+
+    // gread point start--------------------- 
+    // if (this.x >= 80) {
+    //   this.grd = ("Gread point is:" + "A+");
+    // } else if (this.x >= 60) {
+    //   this.grd = ("Gread point is:" + "A");
+    // } else if (this.x >= 40) {
+    //   this.grd = ("Gread point is:" + "B");
+    // }
+    // gread pint end------------------
+
+    // Excilent,good,better,best start----------------------
+
+    // if (this.x >= 80) {
+    //   this.grd = ("Excileeent");
+    // } else if (this.x >= 60) {
+    //   this.grd = ("Good");
+    // } else if (this.x >= 40) {
+    //   this.grd = ("Bad");
+    // }
+    // Excilent,good,better,best end-----------------------
+
+    // total,dis,net start---------------------------------------------
+//     this.total=this.x+this.y+this.z+this.h;
+//     this.dis=0;
+//     this.net=0;
+//     if(this.total>=5000){
+//        this.dis= this.total*.15;
+//      this.net=this.total-this.dis;
+//     } else if(this.total>=2000){
+//       this.dis =this. total*.10;
+//  this. net=this.total-this.dis;
+//     }else if(this.total>=1000){
+//       this.dis =this. total*.5;
+//     this. net=this.total-this.dis;
+//     }
+//     this.dtn1=("Total number is: "+this.total);
+//     this.dtn2=("Discount is: "+this.dis);
+//     this.dtn3=("Net many is:"+this.net);
+    // util -1 start ------------------------------------
+     
+    while(this.x!=-1){
+     this.sum= this.sum+this.x;
+     this.ut=("Summestion until -1: "+this.sum);
+    }
+   
+   
+  }
+     }
+
+===================================html================================
+
+<router-outlet></router-outlet>
+
+<label>Number-1</label>
+<input type="number"[(ngModel)]="x"><p></p><br>
+<!-- <label>Number-2</label>
+<input type="number"[(ngModel)]="y"><p></p><br>         
+<label>Number-3</label>
+<input type="number"[(ngModel)]="z"><p></p><br>  
+<label>Number-4</label>
+<input type="number"[(ngModel)]="h"><p></p><br>            -->
+
+<button type="submit"(click)="m1()" style="background-color: blue; color: white;">Submit</button>
+<!-- <h1>{{dtn1}}</h1>
+<h1>{{dtn2}}</h1> -->
+<h1>{{ut}}</h1>
+
+
+
+  
+
+
+
+
