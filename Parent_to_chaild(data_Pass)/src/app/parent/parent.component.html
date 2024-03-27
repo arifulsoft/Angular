@@ -1,0 +1,8 @@
+
+
+<h1>Parent value: {{id}}</h1>
+
+<input type="text" name="id" #z >
+<input type="button" value="Submit" (click)="m1(z.value)">
+
+<app-chaild2 [myid]="id"></app-chaild2>
