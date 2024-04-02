@@ -1,0 +1,50 @@
+<div class="container" style="background-color: blueviolet;">
+    <div class=" container cd">
+        <h2 style="margin-left: 300px; color: white; padding: 10px;">Login Form</h2>
+    </div>
+    <div class="container tr">
+        <div style="margin-left: 100px; ">
+            <form (ngSubmit)="m1()">
+                <div class="mb-3">
+                    <label for="id" class="form-label">ID</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp" name="id" id="id" 
+                        [(ngModel)]="id" style="width: 600px;">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="text" class="form-control" name="password" id="password" [(ngModel)]="password"
+                        style="width: 600px;">
+                </div><br><br>
+                <button type="submit" class="btn btn-primary" type="Submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- dropdoun -->
+
+<div class="container" style="background-color: cadetblue; height: 500px; margin-top: 20px;">
+
+    <div class="row">
+
+        <div class="col-6" style="margin-top: 50px; background-color: beige; margin-left: 50px;width: 450px;">
+            <h3><b>Select yor Division</b></h3>
+            <select class="form-select" aria-label="Default select example" #dd (change)="m2(dd.value)">
+
+                <option *ngFor="let i of products; let z= index" [value]="z">{{i.Division}}</option>
+
+            </select>
+        </div>
+        <div class="col-6"
+            style="margin-left: 200px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;margin-top: 50px; height: 400px; width: 300px; background-color: burlywood;">
+            <h4>Distric Name</h4>
+            <img src={{product.image}} width="200px" height="120px" alt="...">
+            <hr>
+            <div class="card-body">
+                <h5 class="card-title"><span class="cl">Distric-1:</span>{{product.Division}}</h5><br>
+                <h5 class="card-title"><span class="cl">Distric-2:</span>{{product.District2}}</h5><br>
+                <h5 class="card-title"><span class="cl">Distric-3</span>{{product.District3}}</h5><br>
+                <h5 class="card-title"> <span class="cl">Distric-4:</span>{{product.District4}}</h5>
+            </div>
+        </div>
+    </div>
+</div>
